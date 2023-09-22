@@ -1,0 +1,16 @@
+<!-- 在 </body> 閉合標籤之前添加以下 JavaScript 代碼 -->
+<script>
+    // 文件列表數據
+    const files = ["文件1.txt", "文件2.pdf", "文件3.jpg"];
+
+    // 獲取文件列表元素
+    const fileList = document.getElementById("file-list");
+
+    // 遍歷並添加文件列表
+    files.forEach((file) => {
+        const li = document.createElement("li");
+        li.textContent = file;
+        li.classList.add("file-item");
+        fileList.appendChild(li);
+    });
+</script>
